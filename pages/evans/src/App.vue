@@ -1,8 +1,20 @@
 <template>
   <div id="app">
-    <main>
-      <router-view/>
-    </main>
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+          <main>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+            <router-view/>
+          </main>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,37 +24,32 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "~bulma/bulma.sass";
+
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #000f0f;
 }
 
 #app {
-  height: 100%;
-  width: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
-#app {
-  height: 100%;
-  width: 100%;
-  background-image: url(./assets/background.png);
+.hero {
+  background: url(./assets/background.png) no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 23, 42, 0.6);
+.hero-body {
+  background-color: rgba(0, 16, 16, 0.6);
 }
 
 </style>
