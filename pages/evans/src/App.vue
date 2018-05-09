@@ -1,27 +1,16 @@
 <template>
-  <div id="app">
+  <main>
     <div class="hero is-fullheight">
       <div class="hero-body">
-          <main>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-            <router-view/>
-          </main>
+        <div class="container is-fullheight">
+          <router-view/>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
-export default {
-  name: 'App',
-};
 </script>
 
 <style lang="scss">
