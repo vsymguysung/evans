@@ -1,13 +1,15 @@
 <template>
-  <main>
-    <div class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container is-fullheight">
-          <router-view/>
+  <div class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-half">
+            <router-view/>
+          </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -17,10 +19,6 @@
 @import "~bulma/bulma.sass";
 
 html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #000f0f;
 }
 
