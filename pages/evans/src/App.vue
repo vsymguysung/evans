@@ -1,9 +1,14 @@
 <template>
   <div class="hero is-fullheight">
+    <template v-if="this.$route.path != '/'">
+      <header>
+        <navigator></navigator>
+      </header>
+    </template>
     <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-half is-offset-half">
+          <div class="column is-three-fifths is-offset-two-fifths">
             <router-view/>
           </div>
         </div>
@@ -13,10 +18,17 @@
 </template>
 
 <script>
+import Navigator from './components/Navigator';
+
+export default {
+  components: {
+    Navigator,
+  },
+};
 </script>
 
 <style lang="scss">
-@import "~bulma/bulma.sass";
+@import "assets/styles.scss";
 
 html, body {
   background-color: #000f0f;
@@ -29,6 +41,12 @@ html, body {
   color: #2c3e50;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .hero {
   background: url(./assets/background.png) no-repeat fixed;
   -webkit-background-size: cover;
@@ -36,7 +54,27 @@ html, body {
 }
 
 .hero-body {
-  background-color: rgba(0, 16, 16, 0.6);
+  background-color: rgba(0, 16, 16, 0.8);
 }
 
+.container {
+  overflow: hidden;
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-position-y: center;
+    background-position-x: 70%;
+  }
+
+  .hero-body {
+    background-color: rgba(0, 16, 16, 0.5);
+  }
+}
 </style>
