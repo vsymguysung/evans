@@ -12,7 +12,7 @@
         </li>
       </template>
       <li>
-        <router-link to="/demo" :replace="this.$route.path != '/'">
+        <router-link to="/demo" v-bind:replace="this.$route.path != '/'">
             <span class="icon is-small">
               <font-awesome-icon icon="terminal" />
             </span>
@@ -20,7 +20,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/install" :replace="this.$route.path != '/'">
+        <router-link to="/install" v-bind:replace="this.$route.path != '/'">
             <span class="icon is-small">
               <font-awesome-icon icon="code" />
             </span>
@@ -28,9 +28,9 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/itunes" :replace="this.$route.path != '/'">
+        <router-link to="/itunes" v-bind:replace="this.$route.path != '/'">
             <span class="icon is-small">
-              <font-awesome-icon :icon="['fab', 'itunes-note']" />
+              <font-awesome-icon v-bind:icon="['fab', 'itunes-note']" />
             </span>
           <span>iTunes</span>
         </router-link>
@@ -38,7 +38,7 @@
       <li>
         <a target="_blank" href="//github.com/ktr0731/evans">
           <span class="icon is-small">
-            <font-awesome-icon :icon="['fab', 'github']" />
+            <font-awesome-icon v-bind:icon="['fab', 'github']" />
           </span>
           <span>GitHub</span>
         </a>

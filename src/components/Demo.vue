@@ -30,11 +30,6 @@ export default {
       selected: 'repl',
     };
   },
-  methods: {
-    changed(e) {
-      console.log(e);
-    },
-  },
 };
 </script>
 
