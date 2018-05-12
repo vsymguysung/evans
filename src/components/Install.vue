@@ -3,7 +3,7 @@
     <code class="bash">
       $ # HomeBrew
       $ brew tap ktr0731/evans
-      $ brew install ktr0731/evans
+      $ brew install evans
 
       $ # from GitHub Releases (version: 0.3.0, environment: Linux, AMD64)
       $ endpoint=https://github.com/ktr0731/evans/releases/download
