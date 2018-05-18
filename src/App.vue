@@ -54,7 +54,7 @@ header {
 }
 
 .hero-body {
-  background-color: rgba(0, 16, 16, 0.8);
+  background-color: rgba(0, 16, 16, 0.65);
 }
 
 .container {
@@ -74,7 +74,7 @@ header {
   }
 
   .hero-body {
-    background-color: rgba(0, 16, 16, 0.5);
+    background-color: rgba(0, 16, 16, 0.65);
   }
 }
 </style>
