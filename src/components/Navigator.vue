@@ -12,19 +12,11 @@
         </li>
       </template>
       <li>
-        <router-link to="/demo" v-bind:replace="this.$route.path != '/'">
-            <span class="icon is-small">
-              <font-awesome-icon icon="terminal" />
-            </span>
-          <span>Demo</span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/install" v-bind:replace="this.$route.path != '/'">
+        <router-link to="/about" v-bind:replace="this.$route.path != '/'">
             <span class="icon is-small">
               <font-awesome-icon icon="code" />
             </span>
-          <span>Install</span>
+          <span>About</span>
         </router-link>
       </li>
       <li>
@@ -67,7 +59,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/styles.scss";
 nav {
   margin-top: 5vh;
   margin-right: 1vw;

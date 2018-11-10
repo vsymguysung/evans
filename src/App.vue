@@ -27,11 +27,36 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "assets/styles.scss";
 
+.hero {
+  background: url(./assets/background.png) no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.hero-body {
+  background-color: rgba(0, 16, 16, 0.65);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-position-y: center;
+    background-position-x: 70%;
+  }
+
+  .hero-body {
+    background-color: rgba(0, 16, 16, 0.65);
+  }
+}
+</style>
+
+<style lang="scss">
 html, body {
   background-color: #000f0f;
+  margin: 0;
+  font-size: 16px;
 }
 
 #app {
@@ -47,16 +72,6 @@ header {
   right: 0;
 }
 
-.hero {
-  background: url(./assets/background.png) no-repeat fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.hero-body {
-  background-color: rgba(0, 16, 16, 0.65);
-}
-
 .container {
   overflow: hidden;
 }
@@ -64,17 +79,6 @@ header {
 @media (max-width: 820px) {
   html {
     font-size: 75%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    background-position-y: center;
-    background-position-x: 70%;
-  }
-
-  .hero-body {
-    background-color: rgba(0, 16, 16, 0.65);
   }
 }
 </style>

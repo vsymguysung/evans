@@ -16,7 +16,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/styles.scss";
+
 container {
   color: #ececec;
 }
@@ -30,12 +32,12 @@ h1 {
 
 p {
   line-height: 1;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   padding-left: 5px;
+  margin-top: 2vh;
 }
 
 nav {
-  margin-top: 7vh;
+  padding-left: 10px;
 }
-
 </style>

@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Top from '@/components/Top';
-import Demo from '@/components/Demo';
-import Install from '@/components/Install';
+import About from '@/components/About';
 import ITunes from '@/components/ITunes';
 
 Vue.use(Router);
@@ -15,14 +14,9 @@ export default new Router({
       component: Top,
     },
     {
-      path: '/demo',
-      name: 'Demo',
-      component: Demo,
-    },
-    {
-      path: '/install',
-      name: 'Install',
-      component: Install,
+      path: '/about',
+      name: 'About',
+      component: About,
     },
     {
       path: '/itunes',
@@ -30,4 +24,5 @@ export default new Router({
       component: ITunes,
     },
   ],
+  mode: 'history',
 });
