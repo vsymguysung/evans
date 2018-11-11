@@ -50,6 +50,11 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     padding: 15px 12px;
+    overflow: scroll;
+  }
+
+  p > img {
+    width: 100%;
   }
 
   .markdown > pre > code {
