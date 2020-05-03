@@ -10,6 +10,7 @@
               <option value="0.6.0">0.6.0 Almagest</option>
               <option value="0.7.0">0.7.0 Elisha</option>
               <option value="0.8.0">0.8.0 High School Love</option>
+              <option value="0.9.0">0.9.0 GOLD RUSH</option>
           </select>
       </div>
       <div>
@@ -35,6 +36,7 @@
                     "0.6.0": "https://tools.applemusic.com/embed/v1/song/519993319?country=jp",
                     "0.7.0": "https://tools.applemusic.com/embed/v1/song/519993232?country=jp",
                     "0.8.0": "https://tools.applemusic.com/embed/v1/song/922882987?country=jp",
+                    "0.9.0": "https://tools.applemusic.com/embed/v1/song/424135108?country=jp",
                 },
             };
         },
